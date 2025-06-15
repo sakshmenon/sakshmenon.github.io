@@ -116,14 +116,7 @@ https://templatemo.com/tm-578-first-portfolio
                
                                         const now = new Date();
                                         const time = now.toLocaleTimeString();
-                                        const date = now.toLocaleDateString();
-                                        
-                                        Cookies.set('last_vist', 'true');
-                                        Cookies.set('last_vist_date', date);
-                                        Cookies.set('last_vist_time', time);
-                                        mycookie = Cookies.get('last_vist_time');
-                                        
-
+                                        const date = now.toLocaleDateString();                                      
                                     }
                                     
                                     if (Cookies.get('last_vist') == 'true') {          
@@ -136,6 +129,10 @@ https://templatemo.com/tm-578-first-portfolio
                                         html += 'Welcome back! Your last visit was on: ' + mycookie_d + ' @ ' + mycookie_t;
                                         cookieData.innerHTML = html;
                                     }
+
+                                    Cookies.set('last_vist', 'true');
+                                    Cookies.set('last_vist_date', date);
+                                    Cookies.set('last_vist_time', time);
                                     
                                 </script>
                             </div>
