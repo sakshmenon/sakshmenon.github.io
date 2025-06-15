@@ -8,7 +8,7 @@
         <meta name="description" content="">
         <meta name="author" content="TemplateMo">
 
-        <title>Personal Portfolio</title>
+        <title>Personal Project</title>
 
         <!-- CSS FILES -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -110,7 +110,9 @@ https://templatemo.com/tm-578-first-portfolio
                                 <script src=" https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
                                 <script>
                                     if (Cookies.get('last_vist') != 'true') {   
-                                        
+                                        const cookieData = document.getElementById("cookie sec");
+                                        let html = '';
+                                        html += 'Welcome to my homepage for the first time!';                                        
                
                                         const now = new Date();
                                         const time = now.toLocaleTimeString();
@@ -120,9 +122,7 @@ https://templatemo.com/tm-578-first-portfolio
                                         Cookies.set('last_vist_date', date);
                                         Cookies.set('last_vist_time', time);
                                         mycookie = Cookies.get('last_vist_time');
-                                        const cookieData = document.getElementById("cookie sec");
-                                        let html = '';
-                                        html += 'Welcome to my homepage for the first time!';
+                                        
 
                                     }
                                     
