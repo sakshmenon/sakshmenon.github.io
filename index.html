@@ -109,13 +109,19 @@ https://templatemo.com/tm-578-first-portfolio
                                 <p class="mb-4"><div class="custom-btn btn custom-link" id="cookie sec" href="#section_2"></div></p>
                                 <script src=" https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
                                 <script>
-                                    if (Cookies.get('last_vist') != 'true') {   
+                                    function runcookiescript() {
+                                    if (Cookies.get('last_vist') == undefined) {   
+                                        console.log('first time')      
+
                                         const cookieData = document.getElementById("cookie sec");
                                         let html = '';
-                                        html += 'Welcome to my homepage for the first time!';                                                                              
+                                        html += 'Welcome to my homepage for the first time!';   
+                                        cookieData.innerHTML = html;
+
                                     }
                                     
-                                    if (Cookies.get('last_vist') == 'true') {          
+                                    if (Cookies.get('last_vist') == 'true') {    
+                                        // console.log(Cookies.get('random')==undefined)      
 
                                         mycookie_d = Cookies.get('last_vist_date');
                                         mycookie_t = Cookies.get('last_vist_time');
@@ -133,6 +139,9 @@ https://templatemo.com/tm-578-first-portfolio
                                     Cookies.set('last_vist', 'true');
                                     Cookies.set('last_vist_date', date);
                                     Cookies.set('last_vist_time', time);
+                                }
+
+                                runcookiescript()
                                     
                                 </script>
                             </div>
