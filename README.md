@@ -8,13 +8,13 @@
 
 **Email**: [mailto:menonsv@uc.mail.edu](menonsv@uc.mail.edu)
 
+
 ![My headshot](https://github.com/sakshmenon/waph-sakshmenon/blob/main/Pics/headshot.png)
 
 ### Repository Information
 
-Respository's URL: [https://github.com/sakshmenon/WAPH.git](https://github.com/sakshmenon/WAPH.git)
-
-This is a private repository for Phu Phung to store all code from the course. The organization of this repository is as follows.
+Respository's URL: [https://github.com/sakshmenon/sakshmenon.github.io/tree/main](https://github.com/sakshmenon/sakshmenon.github.io/tree/main)
+Website Link: [https://sakshmenon.github.io/](https://sakshmenon.github.io/)
 
 ### Project Overview
 
