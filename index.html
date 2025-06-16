@@ -77,7 +77,7 @@ https://templatemo.com/tm-578-first-portfolio
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="waph.html">WAPH</a>
+                            <a class="nav-link click-scroll" href="waph.html" onclick="open('http://127.0.0.1:5500/waph.html')" >WAPH</a>
                         </li>
                     </ul>
 
@@ -268,7 +268,7 @@ https://templatemo.com/tm-578-first-portfolio
                                             </div>
                                         </div>
 
-                                        <p>Browser extension that makes your search results more hollistic.</p>
+                                        <p>Browser extension for hollistic search results.</p>
 
                                         <a href="#" class="custom-btn custom-border-btn btn mt-3">Discover More</a>
 
@@ -390,7 +390,39 @@ https://templatemo.com/tm-578-first-portfolio
                                         drawNumbers(ctx, radius);
                                         drawTime(ctx, radius);
                                     }
-                                </script>                             
+                                </script> 
+                                <br>
+                                <div id="second api">  </div>
+                                <script>
+                                    async function getXkcdComicAndPrint() {
+                                        const url = 'https://xkcd.vercel.app/?comic=latest';
+
+                                        try {
+                                            const response = await fetch(url);
+
+                                            if (!response.ok) {
+                                            throw new Error(`HTTP error! status: ${response.status}`);
+                                            }
+
+                                            const comicData = await response.json();
+                                            
+                                            const dataContainer = document.getElementById('second api');
+                                            let html = '';
+                                            html = '<p> <img src="' + comicData.img + '" <p>';
+                                            dataContainer.innerHTML = html ;
+                                            console.log(html);
+
+
+                                        } catch (error) {
+                                            console.error('There was a problem fetching the comic data:', error);
+                                        }
+                                        }
+                                        getXkcdComicAndPrint()
+                                </script>
+                                <br>
+                                <div id="number" onclick="document.getElementById('number').innerHTML=Math.floor(Math.random() * 10)">Click here to show a random number</div>
+                                
+                                
                             </p>
                         </div>
                     </div>
