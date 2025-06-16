@@ -27,10 +27,10 @@ The purpose of this project is to build a personal portfolio webpage based on th
 5. Cookies to keep track of data
 
 ### General Requirements
-The front page `index.html` contains my information such as my name, headshot, education, experiences, contact info, and skills. At the top of the page, you will find a quick navigation tab that lets you scroll to other parts of the webpage easily. The WAPH option takes you to a page that introduces the WAPH course and all the related hands on projects.
+The front page `index.html` contains my information such as my name, headshot, education, experiences, contact info, and skills. At the top of the page, you will find a quick navigation tab that lets you scroll to other parts of the webpage easily with the use of href. The WAPH option takes you to a page that introduces the WAPH course and all the related hands on projects.
 
 ### Non Technical Requirements
-I obtained an open-source CSS template and structured my website around it. I added in a page tracker from `https://flagcounter.com/` to keep track of the number of visitors and their location info.
+I obtained an open-source CSS template and structured my website around it. I added in a page tracker from `https://flagcounter.com/` at the top of my webpage to keep track of the number of visitors and their location info.
 
 ### Technical Requirements
 I made use of jQurey to implement the digital clock, analog clock, how/hide email, and a random number between 0 and 9. The Joke API was used above the digital/analog clock. It refreshes every minute with the use of an interval function. I obtained the image from `https://xkcd.now.sh/` via a fetch request and display it at the bottom of the page. JS cookies are used to keep track of the visitors to the website. If it is their first time visiting, they are greeted with a welcome message. If they have visited before, they are greeted with a welcome message include the details about their last visit.
